@@ -11,7 +11,17 @@
     width: max-content;
 
 }
-
+.pProgress{
+    position: sticky;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    bottom: 80%;
+    /* Add z-index to ensure progress bar stays above other content */
+    z-index: 100;
+    /* Hide progress by default */
+    display: none;
+}
 .pItem{
     height: 100vh;
     width: 100vw;
@@ -71,4 +81,34 @@
     border: none;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media (max-width:1536px){
+    .pItem{
+        gap: 50px;
+    }
+}
+@media (max-width:1280px){
+    .pText h1{
+        font-size: 48px;
+    }
+}
+@media (max-width:1024px){
+    .pItem{
+        flex-direction: column;
+    }
+    .pImg, .pText{
+        width: 80%;
+    }
+    .pProgress{
+        bottom: 100px;
+        left: 100%;
+    }
+}
+
+@media (max-width:768px){
+    .pProgress{
+        width: 50px;
+        height: 50px;
+    }
 }
