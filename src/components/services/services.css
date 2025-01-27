@@ -114,10 +114,13 @@ gap: 8px;
         width: 100%;
 
     }
+    .service{
+        padding: 20px;
+    }
     .sSection.right{
         /* display: none; */
         justify-content: start;
         margin-top: 40px;
-        height: 40%;
+        height: 25%;
     }
 }
