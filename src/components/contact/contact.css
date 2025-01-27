@@ -54,7 +54,7 @@ label{
     .contact{
         flex-direction: column;
     }
-    .sSection{
+    .cSection{
         width: 100%;
     }
     .cSection:first-child{

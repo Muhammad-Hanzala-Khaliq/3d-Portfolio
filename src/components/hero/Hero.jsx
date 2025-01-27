@@ -48,7 +48,7 @@ const Hero = () => {
         >
           Hey There,
           <br />
-          <span>I'm Robort!</span>
+          <span>I'm Hanzala!</span>
         </motion.h1>
         {/* Awards */}
         <motion.div
@@ -57,12 +57,27 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Top Rated Designer</motion.h2>
+          <motion.h2 variants={awardVariants}>
+            {" "}
+            <span className="hTitle" style={{ fontSize: "40px" }}>
+              Software Engineer{" "}
+            </span>{" "}
+            <br />
+            Full Stack Developer
+          </motion.h2>
           <motion.p variants={awardVariants}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </motion.p>
           <motion.div variants={awardVariants} className="awardList">
-            <motion.img variants={awardVariants} src="/award1.png" alt="" />
+            <a
+              style={{ cursor: "pointer" }}
+              href="https://www.fiverr.com/users/hanzalawebworks/seller_dashboard"
+              target="_blank"
+            >
+              {" "}
+              <motion.img variants={awardVariants} src="/award1.png" alt="" />
+            </a>
+
             <motion.img variants={awardVariants} src="/award2.png" alt="" />
             <motion.img variants={awardVariants} src="/award3.png" alt="" />
           </motion.div>
@@ -190,7 +205,7 @@ const Hero = () => {
           </Suspense>
         </Canvas>
         <div className="hImg">
-          <img src="/hero.png" alt="" />
+          <img src="/hero-section-img.png" alt="" />
         </div>
       </div>
     </div>

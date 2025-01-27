@@ -6,38 +6,38 @@ import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
 const items = [
   {
     id: 1,
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/Project 1.png",
+    title: "Nike Website ",
+    desc: "I have created this beautiful shoes, responsive website using React.js. Please check out by clicking the button below.",
+    link: "https://hanzala-nike-website.netlify.app/",
   },
   {
     id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/Project 2.png",
+    title: "Movie Website",
+    desc: "I crafted a visually, responsive movie website using React and Redux to showcase for better user experience.",
+    link: "https://movio-app.vercel.app/",
   },
   {
     id: 3,
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
+    img: "/Project 3.png",
+    title: "Web Flow Website",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    link: "https://webflow-website.netlify.app/",
   },
   {
     id: 4,
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/Project 4.png",
+    title: "Car Rental Website",
+    desc: "I have created this beautiful shoes, responsive website using React.js. Please check out by clicking the button below.",
+    link: "https://hanzala-car-website.netlify.app/",
   },
   {
     id: 5,
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/Project 5.png",
+    title: "Matrimonial Site",
+    desc: "I have created this beautiful , responsive website using React.js and firebase.",
+    link: "https://hanzala-matrimonials.netlify.app/",
   },
 ];
 
@@ -96,8 +96,8 @@ const ListItem = ({ item }) => {
       >
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
-        <motion.a variants={textVariants} href={item.link}>
-          <button>View Projec</button>
+        <motion.a variants={textVariants} href={item.link} target="_blank">
+          <button>View Project</button>
         </motion.a>
       </motion.div>
     </div>
